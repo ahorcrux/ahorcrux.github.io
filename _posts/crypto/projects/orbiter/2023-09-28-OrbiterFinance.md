@@ -1,9 +1,9 @@
 ---
-title: 
+title: 跨链桥(Bridge)项目之OrbiterFinance
 author: since2014
-date: 2023-10-28 18:02:00 +0800
+date: 2023-09-28 13:53:20 +0800
 categories: [Web3, Project]
-tags: [blockchain, web3, crypto]
+tags: [blockchain, web3, orbiter, bridge]
 render_with_liquid: false
 ---
 # Orbiter Finance 跨链机制

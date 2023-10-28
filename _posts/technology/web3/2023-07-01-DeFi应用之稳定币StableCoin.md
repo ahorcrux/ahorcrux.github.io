@@ -1,9 +1,9 @@
 ---
-title: 
+title: Defi应用之稳定币(Stable Coin)
 author: since2014
 date: 2023-07-01 18:02:00 +0800
 categories: [Technology, Blockchain]
-tags: [blockchain, web3, crypto, defi]
+tags: [blockchain, web3, usdt, usdc, dai, stablecoin, defi]
 render_with_liquid: false
 ---
 

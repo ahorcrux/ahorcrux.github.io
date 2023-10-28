@@ -1,9 +1,9 @@
 ---
-title: Defi应用之金库Vault
+title: Defi应用之金库(Vault)
 author: since2014
 date: 2023-08-02 18:02:00 +0800
 categories: [Technology, Blockchain]
-tags: [blockchain, web3, crypto, defi]
+tags: [blockchain, web3, crypto, defi, vault]
 render_with_liquid: false
 ---
 
