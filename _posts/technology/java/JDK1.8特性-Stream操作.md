@@ -1,0 +1,38 @@
+---
+title: Java8特性: Stream操作
+author: since2014
+date: 2023-10-28 10:10:00 +0800
+categories: [Technology, Java]
+tags: [Java8, Jdk1.8, Stream]
+render_with_liquid: false
+---
+
+```java
+// 将 List<Student> stuList; 中对象的某个属性 提取为新的list
+
+List<String> stIdList1 = stuList.stream().map(Student::getId).collect(Collectors.toList());
+
+// List<BigDecimal> list 求最大值、最小值、求和
+
+//最大值
+Optional<BigDecimal> optional = list.stream().reduce(BigDecimal::max);
+
+//最小值
+Optional<BigDecimal> optional = list.stream().reduce(BigDecimal::min);
+
+//求和
+BigDecimal sum= list.stream().reduce(BigDecimal.ZERO, BigDecimal::add);
+
+//int 求和
+eCoinMsis.stream().mapToInt(ECoinGeckoMsi::getMsiIndex).sum();
+
+// 过滤
+
+Optional<JSONArray> volume = result.getTotal_volumes().stream().filter(v -> v.getLong(0).equals(o.getLong(0))).findFirst();
+
+//List<EUserDeviationRateStrategy> list分组
+Map<Long, List<EUserDeviationRateStrategy>> map = list.stream().collect(Collectors.groupingBy(EUserDeviationRateStrategy::getUserId));
+
+//List<MarketCapBo> 分组、统计
+Map<Object, Long> map = list.stream().collect(Collectors.groupingBy(employee -> employee.getCurrentDay(), Collectors.counting()));
+```
