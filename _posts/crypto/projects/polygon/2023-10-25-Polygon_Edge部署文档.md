@@ -1,9 +1,9 @@
 ---
-title: 
+title: Polygon Edge(Supernet)部署文档
 author: since2014
-date: 2023-10-28 18:02:00 +0800
+date: 2023-10-25 16:34:00 +0800
 categories: [Web3, Project]
-tags: [blockchain, web3, crypto]
+tags: [blockchain, web3, polygon, edge]
 render_with_liquid: false
 ---
 # 测试环境配置（Mumbai）
@@ -99,7 +99,7 @@ render_with_liquid: false
      ## --contract-deployer-allow-list-admin  
      ## --contract-deployer-allow-list-enabled 
      ## --bridge-allow-list-admin 
-     ## --bridge-allow-list-enabled  这里地址注意会生成错位，需要手动改 
+     ## --bridge-allow-list-enabled  这些地址不能带0x前缀 
      ## --block-gas-limit 数值可以改大一点
      ```
 
@@ -110,7 +110,7 @@ render_with_liquid: false
      ```shell
      ./polygon-edge polybft stake-manager-deploy \
        --proxy-contracts-admin 0x654c50049e2f4bfca4cc12c384e1b5003bbcfcb7 \
-       --private-key e9992d0e84de89b204f262d940dba5ff42f852cc47e020dc61afbbb55bd58858 \
+       --private-key $(your private-key) \
        --genesis ./genesis.json \
        --jsonrpc https://rpc-mumbai.maticvigil.com \
        --stake-token 0x537a2E0048ae4d2cabfFfD2Fe125Ad5703Ea6553
@@ -144,7 +144,7 @@ render_with_liquid: false
    
    ```shell
    ./polygon-edge rootchain deploy \
-     --deployer-key e9992d0e84de89b204f262d940dba5ff42f852cc47e020dc61afbbb55bd58858 \
+     --deployer-key $(your private-key) \
      --stake-manager 0x41ffd39f1D4215A16C2C5A30884387E033bB5cBc \
      --stake-token 0x537a2E0048ae4d2cabfFfD2Fe125Ad5703Ea6553 \
      --proxy-contracts-admin 0x654c50049e2f4bfca4cc12c384e1b5003bbcfcb7 \
@@ -161,7 +161,7 @@ render_with_liquid: false
      
      ```shell
      ./polygon-edge polybft whitelist-validators \
-       --private-key e9992d0e84de89b204f262d940dba5ff42f852cc47e020dc61afbbb55bd58858 \
+       --private-key $(your private-key) \
        --addresses 0xf0f63Bf5D51fbbD067CA2595EaC9e61333b153FB,0x03679198091F9Da027F98598c90e774A2468B901,0x5f70789636ec39e589326566E66bf75A177C8a5F,0xee38cB7897D0d66Feb40df0FFB93541EC9794Ae2 \
        --supernet-manager 0xE3EdAFD12a5F45A25181A05ec4119Cb6C49fE2Df \
        --jsonrpc https://rpc-mumbai.maticvigil.com
@@ -263,7 +263,7 @@ render_with_liquid: false
      
      ```shell
      ./polygon-edge polybft supernet \
-       --private-key e9992d0e84de89b204f262d940dba5ff42f852cc47e020dc61afbbb55bd58858 \
+       --private-key $(your private-key) \
        --genesis ./genesis.json \
        --supernet-manager 0xE3EdAFD12a5F45A25181A05ec4119Cb6C49fE2Df \
        --stake-manager 0x41ffd39f1D4215A16C2C5A30884387E033bB5cBc \
