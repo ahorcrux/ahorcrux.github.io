@@ -1,5 +1,5 @@
 ---
-title: Rollup跨链桥(Bridge)
+title: 跨链桥(Bridge)之Rollup
 author: since2014
 date: 2023-09-12 06:30:00 +0800
 categories: [Technology, Blockchain]

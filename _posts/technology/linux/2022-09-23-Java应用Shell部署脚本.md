@@ -1,7 +1,7 @@
 ---
 title: Java应用部署脚本
 author: since2014
-date: 2023-10-28 18:02:00 +0800
+date: 2022-09-23 15:11:00 +0800
 categories: [Technology, Java]
 tags: [shell, deploy, script, java]
 render_with_liquid: false
