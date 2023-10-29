@@ -6,7 +6,8 @@ categories: [Web3, Project]
 tags: [blockchain, web3, polygon, supernet]
 render_with_liquid: false
 ---
-# 测试环境配置（Mumbai）
+
+## 测试环境配置（Mumbai）
 
 | Key                        | Value                                      |
 | -------------------------- | ------------------------------------------ |
@@ -21,9 +22,9 @@ render_with_liquid: false
 | CustomSupernetManager      | 0xD8b4D4A8cAc18630BeEb9a0610D9a8DB6D17EA5D |
 | CustomSupernetManagerProxy | 0xE3EdAFD12a5F45A25181A05ec4119Cb6C49fE2Df |
 
-# 部署Supernet
+## 部署Supernet
 
-+ **创建并配置 Chlid Chain**
+### 创建并配置 Chlid Chain
   
   1. *创建 Node 密钥*
      
@@ -103,7 +104,7 @@ render_with_liquid: false
      ## --block-gas-limit 数值可以改大一点
      ```
 
-+ **配置 Root Chain**
+### 配置 Root Chain
   
   1. *部署 StakeManager 合约*
      
@@ -153,7 +154,7 @@ render_with_liquid: false
    
      ## --deployer-key 部署者的私钥，默认为本地客户端的默认账户
    ```
-+ **配置 Validators**
+### 配置 Validators
   
   1. *在rootchain上设置validators白名单*
      
@@ -278,7 +279,7 @@ render_with_liquid: false
        ## --enable-staking
      ```
 
-+ **启动 Chlid Chain Cluster**
+### 启动 Chlid Chain Cluster
   
   1. *启动*
      
@@ -311,14 +312,14 @@ render_with_liquid: false
    curl  http://127.0.0.1:10001 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x5b5721dd69f1e2b0dd8e66a0babad1b3393f02e19e5b00562db81a2c2c9fa485"],"id":1}'
    ```
 
-# 使用Supernet
+## 使用Supernet
 
-+ **添加账户白名单**
+### 添加账户白名单
 
-+ **转账/部署/调用**
+### 转账/部署/调用
 
-+ **跨链**
+### 跨链
 
-# 参考来源
+## 参考来源
 
 [Polygon官网](https://wiki.polygon.technology/docs/edge/operate/deploy/)
