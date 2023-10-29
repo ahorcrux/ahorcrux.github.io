@@ -7,7 +7,7 @@ tags: [blockchain, web3, rollup, bridge]
 render_with_liquid: false
 ---
 
-# Rollup Bridge
+## Rollup Bridge
 
 Rollup 的安全性是锚定在它所在的 L1 上的（例如 Optimism 锚定在 Ethereum 上）：你要针对 L2 的交易进行审查攻击，等同于對 L1 交易进行审查攻击；你要 re-org L2 ，进行双花攻击，等同于你要 re-org L1。
 

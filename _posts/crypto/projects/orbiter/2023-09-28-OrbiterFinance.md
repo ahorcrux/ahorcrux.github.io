@@ -110,7 +110,7 @@ Orbiter 采用了一套去中心化机制，主要通过三个合约即 MDC、EB
 
 ## 技术实现
 
-+ **项目模块**
+### 项目模块
   
   1. [**OrbiterModule**](https://github.com/Orbiter-Finance/OrbiterModule)
      
@@ -132,7 +132,6 @@ Orbiter 采用了一套去中心化机制，主要通过三个合约即 MDC、EB
      
      Solidity开发的一些列合约，包括：MDC 、EBC 、SPV
 
-+  
 
 
 
