@@ -1,5 +1,5 @@
 ---
-title: Defi应用之稳定币(Stable Coin)
+title: DeFi 应用 | 稳定币（Stable Coin）
 author: since2014
 date: 2023-07-01 18:02:00 +0800
 categories: [Technology, Blockchain]

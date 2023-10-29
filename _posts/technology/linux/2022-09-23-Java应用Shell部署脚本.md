@@ -1,5 +1,5 @@
 ---
-title: Java应用部署脚本
+title: Shell 脚本 | 部署 Java 应用
 author: since2014
 date: 2022-09-23 15:11:00 +0800
 categories: [Technology, Java]

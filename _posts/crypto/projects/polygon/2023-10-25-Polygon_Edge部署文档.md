@@ -1,9 +1,9 @@
 ---
-title: 公链| Polygon - Edge（Supernet）部署教程
+title: 公链 | Polygon Edge（Supernet）部署教程
 author: since2014
 date: 2023-10-25 16:34:00 +0800
 categories: [Web3, Project]
-tags: [blockchain, web3, polygon, edge]
+tags: [blockchain, web3, polygon, supernet]
 render_with_liquid: false
 ---
 # 测试环境配置（Mumbai）

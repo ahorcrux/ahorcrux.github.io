@@ -1,5 +1,5 @@
 ---
-title: Defi应用之金库(Vault)
+title: DeFi 应用 | 金库（Vault）
 author: since2014
 date: 2023-08-02 18:02:00 +0800
 categories: [Technology, Blockchain]
