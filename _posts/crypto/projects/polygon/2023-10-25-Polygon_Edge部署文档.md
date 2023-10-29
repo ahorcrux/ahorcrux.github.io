@@ -1,5 +1,5 @@
 ---
-title: Polygon Edge(Supernet)部署文档
+title: 公链| Polygon - Edge（Supernet）部署教程
 author: since2014
 date: 2023-10-25 16:34:00 +0800
 categories: [Web3, Project]

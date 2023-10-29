@@ -1,5 +1,5 @@
 ---
-title: 跨链桥(Bridge)项目之 OrbiterFinance
+title: 跨链桥（Bridge）项目 - OrbiterFinance
 author: since2014
 date: 2023-09-28 13:53:20 +0800
 categories: [Web3, Project]
