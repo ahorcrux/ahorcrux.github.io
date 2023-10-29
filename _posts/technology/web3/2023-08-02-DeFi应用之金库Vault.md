@@ -7,9 +7,11 @@ tags: [blockchain, web3, crypto, defi, vault]
 render_with_liquid: false
 ---
 
+## Vault是什么
+
 区块链的去中心化金融（DeFi）领域中，金库（Vault）是一个重要的概念。它是一种智能合约，用于自动化执行一系列复杂的操作，以实现最大化的投资收益；
 
-
+## 功能
 
 主要功能包括：
 
@@ -21,9 +23,9 @@ render_with_liquid: false
 
 4. 安全性：Vaults是基于智能合约的，智能合约的执行是完全透明和可预测的，这为投资者提供了一定程度的安全保障。
 
+## 代码解析
 
-
-```solidity
+```js
 pragma solidity ^0.5.16;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -49,7 +51,7 @@ contract MyVault {
 
 ```
 
-```
+```js
 pragma solidity ^0.5.16;
 
 import "./IStrategy.sol";

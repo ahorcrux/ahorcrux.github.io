@@ -7,17 +7,15 @@ tags: [blockchain, web3, usdt, usdc, dai, stablecoin, defi]
 render_with_liquid: false
 ---
 
-# DEFI：稳定币
-
 ## 稳定币分类
 
-* ***基于法币抵押***
+### 基于法币抵押
   
   * USDT
   
   * USDC
 
-* ***基于货币超额抵押***
+### 基于货币超额抵押
   
   * Dai
   
@@ -27,7 +25,7 @@ render_with_liquid: false
     
     PegKepper: 维持crvUSD在一美元，当crvUSD价格超过1 美元，PegKepper会MINT新的crvUSD,当crvUSD价格低于1$，PegKepper会购买crvUSD销毁掉
 
-* ***基于算法***
+### 基于算法
   
   * Basis
   
@@ -37,6 +35,6 @@ render_with_liquid: false
   
   * Fray
 
-## *参考链接*
+## *参考来源*
 
 > [一文读懂：深度解析全球稳定币2023现状与监管 - PANews](https://www.panewslab.com/zh/articledetails/wsx20903ls7b.html)
