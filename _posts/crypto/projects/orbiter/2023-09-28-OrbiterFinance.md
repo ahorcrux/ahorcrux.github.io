@@ -133,11 +133,9 @@ Orbiter 采用了一套去中心化机制，主要通过三个合约即 MDC、EB
      Solidity开发的一些列合约，包括：MDC 、EBC 、SPV
 
 
-
-
 ## 参考来源
 
-+ https://docs.orbiter.finance/technology
++ [Orbiter Finance Docs](https://docs.orbiter.finance/technology)
 
 + [跨链公开课第8讲《代表跨链桥项目分析》 - YouTube](https://www.youtube.com/watch?v=NVqkRswuOy0&list=UULFw_CmiB5oEHVQUKJ2Ac-erg&index=12)
 
