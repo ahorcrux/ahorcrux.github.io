@@ -1,5 +1,5 @@
 ---
-title: Hardhat 教程 | Hardhat.Config 配置项
+title: Hardhat 教程 (二) | Hardhat.Config 配置项
 author: since2014
 date: 2023-10-30 16:41:00 +0800
 categories: [Technology, Blockchain]
