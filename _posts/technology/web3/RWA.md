@@ -36,8 +36,13 @@ USDT USDC
 RWA为什么最近又火了
 Defi收益率低，RWA
 
+降低商业摩擦
+灵活性与可组合性
+透明与可追溯
 ## 代表协议
 
+协议分类
+    美债类
 
 对比点
     1、KYC、AML和合规性
@@ -47,6 +52,67 @@ Defi收益率低，RWA
 
 ## ERC-3643
 
+Permissioned tokens + digital identity
+
+
+```js
+interface IERC3643 is IERC20 {
+
+   // events
+    event UpdatedTokenInformation(string _newName, string _newSymbol, uint8 _newDecimals, string _newVersion, address _newOnchainID);
+    event IdentityRegistryAdded(address indexed _identityRegistry);
+    event ComplianceAdded(address indexed _compliance);
+    event RecoverySuccess(address _lostWallet, address _newWallet, address _investorOnchainID);
+    event AddressFrozen(address indexed _userAddress, bool indexed _isFrozen, address indexed _owner);
+    event TokensFrozen(address indexed _userAddress, uint256 _amount);
+    event TokensUnfrozen(address indexed _userAddress, uint256 _amount);
+    event Paused(address _userAddress);
+    event Unpaused(address _userAddress);
+
+
+    // functions
+    // getters
+    function onchainID() external view returns (address);
+    function version() external view returns (string memory);
+    function identityRegistry() external view returns (IIdentityRegistry);
+    function compliance() external view returns (ICompliance);
+    function paused() external view returns (bool);
+    function isFrozen(address _userAddress) external view returns (bool);
+    function getFrozenTokens(address _userAddress) external view returns (uint256);
+
+    // setters
+    function setName(string calldata _name) external;
+    function setSymbol(string calldata _symbol) external;
+    function setOnchainID(address _onchainID) external;
+    function pause() external;
+    function unpause() external;
+    function setAddressFrozen(address _userAddress, bool _freeze) external;
+    function freezePartialTokens(address _userAddress, uint256 _amount) external;
+    function unfreezePartialTokens(address _userAddress, uint256 _amount) external;
+    function setIdentityRegistry(address _identityRegistry) external;
+    function setCompliance(address _compliance) external;
+
+    // transfer actions
+    function forcedTransfer(address _from, address _to, uint256 _amount) external returns (bool);
+    function mint(address _to, uint256 _amount) external;
+    function burn(address _userAddress, uint256 _amount) external;
+    function recoveryAddress(address _lostWallet, address _newWallet, address _investorOnchainID) external returns (bool);
+
+    // batch functions
+    function batchTransfer(address[] calldata _toList, uint256[] calldata _amounts) external;
+    function batchForcedTransfer(address[] calldata _fromList, address[] calldata _toList, uint256[] calldata _amounts) external;
+    function batchMint(address[] calldata _toList, uint256[] calldata _amounts) external;
+    function batchBurn(address[] calldata _userAddresses, uint256[] calldata _amounts) external;
+    function batchSetAddressFrozen(address[] calldata _userAddresses, bool[] calldata _freeze) external;
+    function batchFreezePartialTokens(address[] calldata _userAddresses, uint256[] calldata _amounts) external;
+    function batchUnfreezePartialTokens(address[] calldata _userAddresses, uint256[] calldata _amounts) external;
+}
+
+```
+https://eips.ethereum.org/EIPS/eip-3643
+https://github.com/ethereum/ercs/blob/master/ERCS/erc-3643.md
+https://github.com/ERC-3643/ERC-3643/tree/main
+
 ## 参考来源
 + [rwa.xyz](https://www.rwa.xyz/)
 + [Dune](https://dune.com/impossiblefinance/rwa-lending-landscape)
@@ -55,3 +121,4 @@ Defi收益率低，RWA
 + https://foresightnews.pro/article/detail/48740
 + https://www.binance.com/zh-CN/blog/ecosystem/%E5%B8%81%E5%AE%89%E7%A0%94%E7%A9%B6%E9%99%A2%E7%8E%B0%E5%AE%9E%E4%B8%96%E7%95%8C%E8%B5%84%E4%BA%A7%E7%9A%84%E7%8E%B0%E7%8A%B6%E7%A0%94%E7%A9%B6-4697414668665991002
 + https://public.bnbstatic.com/static/files/research/real-world-assets-state-of-the-market-cn.pdf
++ https://www.erc3643.org/
