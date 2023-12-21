@@ -137,13 +137,19 @@ Centrifuge Chain在2022年1月成功赢得了Polkadot的第8次插槽拍卖
 
 基于 Substrate 框架开发，能够共享 Polkadot 网络的安全性，并且已桥接到以太坊
 
-+ Chain Stack
-
-  ![centrifuge-pool](/img/crypto/p_centrifuge_a_8_chain_stack.png)
-
 + Substrate
 
   ![centrifuge-substrate](/img/crypto/p_centrifuge_a_9_substrate.png)
+
++ Chain Stack
+
+  ![centrifuge-chain](/img/crypto/p_centrifuge_a_8_chain_stack.png)
+
+  BABE-区块生成/授权
+
+  GRANDPA-区块终结性工具
+
+  NPoS-验证人选举算法
 
 + 浏览器
 
@@ -158,13 +164,6 @@ Centrifuge Chain在2022年1月成功赢得了Polkadot的第8次插槽拍卖
 它可以让合作者之间安全且隐私地创建、交换和验证资产数据
 
 Paper Records 等公司使用 Centrifuge P2P 网络将发票签名并发送给 Spotify。Spotify 通过该签名来验证文件的接收及正确性，并将文件更新、签名版本发送回 Paper Records。Centrifuge 链用于节点身份，允许Paper Records 查找 Spotify，Spotify 验证 Paper Recrods。然后，Paper Records 就可以将带有两个签名的文档 Hash 锚定到 Centrifuge 链上。使用这些元素，Paper Records 现在可以在 Centrifuge 链上创造一个表示未付发票的 NFT，并将此 NFT 用作抵押品，以获得以太坊等其他区块链上的融资
-
-### Substrate
-BABE-区块生成/授权
-
-GRANDPA-区块终结性工具
-
-NPoS-验证人选举算法
 
 ### POD
 
