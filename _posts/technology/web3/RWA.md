@@ -9,8 +9,8 @@ render_with_liquid: false
 
 ## 前言
 
-根据波士顿咨询集团的一份报告，预计到2030年,代币化资产市场规模将达到16万亿美元,相比2022年的3100亿美元表现出巨大的增长空间
-许多协议已经集成了RWAs或正在参与其增长
+![RWA大事件](/img/technology/web3_rwa_a_6_events.png)
+根据波士顿咨询集团的一份报告，预计到2030年,代币化资产市场规模将达到16万亿美元,相比2022年的3100亿美元表现出巨大的增长空间，许多协议(MakerDao、Aave、Curve)已经集成了RWAs或正在参与其增长。
 
 ## 什么是RWA
 
@@ -43,7 +43,7 @@ render_with_liquid: false
     2020年 DeFi Summer 之后, DeFi的交易、借贷等基础设施已经较为完善，借由智能合约的可编程性和Defi的成功经验，链上资产可以轻松的进行拆分、组合，改变资产形态亦或创造新的资产类型。
 
 
-### RWA为什么最近又火了
+### RWA发展
 ![rwa tvl 趋势图](/img/technology/web3_rwa_a_2_tvl.png)
 (来源：https://app.rwa.xyz/)
 
@@ -62,17 +62,17 @@ render_with_liquid: false
 1. 真实世界
 
     资产发起方、资产托管机构、资产购买渠道。  
-    链下资产金融化，
+    链下资产金融化
 
 2. 信息桥梁
 
     预言机、法律框架、代币标准、第三方审计、出入金支付渠道。  
-    金融数据可信化，
+    金融数据可信化
 
 3. 链上部分
 
     RWA代币发行方、发行平台、智能合约。  
-    可信数据代币化，
+    可信数据代币化
 
 ### 基本流程
 
@@ -92,9 +92,19 @@ render_with_liquid: false
 ![rwa-国债协议占比](/img/technology/web3_rwa_a_4_treasuries_protocol.png)
 ![rwa-国债协议排名](/img/technology/web3_rwa_a_5_defilama_rank.png)
 + MakerDAO RWA
-    6月21日，MakerDAO购买了另外价值7亿美元的美国国债，使其总持有量达到12亿美元。该协议价值23亿美元的RWA抵押品现已成为该协议资产中最大的部分，占Maker资产的49%。
+    
+    ![RWA-MKR](/img/technology/web3_rwa_a_8_mkr_rwa.png)
+    6月21日，MakerDAO购买了另外价值7亿美元的美国国债，使其总持有量达到12亿美元。该协议价值23亿美元的RWA抵押品现已成为该协议资产中最大的部分，占Maker资产的49% 。
+    ![RWA-MKR](/img/technology/web3_rwa_a_7_mkr_vault.png)
+    https://makerburn.com/#/rundown
 + Ondo Finance
+  
+  Ondo Finance 是通过资管巨头贝莱德和太平洋投资管理公司（PIMCO）等机构管理的大型、高流动性ETF，推出了三款代币化的美国国债和债券产品，分别是美国政府债券基金（OUSG 锚定美元稳定币）、短期投资级债券基金（OSTB）和高收益公司债券基金（OHYG）。
+
 + Maple Finance
+  
+  Maple Finance 创建于 2020 年，2021 年 5 月正式上线，产品上线 Solana 和 Ethereum 链，主要业务是为机构提供无抵押借贷服务,在 2022 年去杠杆的市场环境下产生了 5,200 万美元坏账。
+  2023 年 3 月是 Maple Finance TVL 历史低点（24M），随后协议在 5 月推出了针对美国国债的现金管理池后 TVL 有所反弹。
 
 ### 房地产 (Real Estate)
 
@@ -103,19 +113,27 @@ render_with_liquid: false
 
 ### 信贷
 
++ [Centrifuge](/_posts/crypto/projects/centrifuge/centrifuge.md)
 + Goldfinch
-+ Centrifuge
-+ Clearpoll
++ Clearpool
 
 
 ### 碳信用 (Carbon Project)
 
 + Toucan
+  
+  Toucan Protocol 一个将碳作为货币乐高积木带入 Web 3.0 的协议，部署在Polygon上。Toucan Protocol所交易的碳信用来自于在Verra上注册的碳补偿额度， 碳信用从传统市场转移并通过Toucan 碳桥转移到链上，铸造成包含碳信用所有信息的 BatchNFT。碳池将 BatchNFT 进一步拆分为 TCO2 代币，便于在市场上流通。这种双向锚定且可追溯的方式避免资产双花问题
 + Flowcarbon
 
 ### 公链
 
 + POLYMESH
+  
+  Polymesh是一个基于Substrate框架构建的可定制、可升级和可互操作的区块链平台。Polymesh提供了一套完善的合规框架和工具，包括身份注册、权限管理、合规委员会、合规规则引擎等。Polymesh还支持多种类型的真实资产通证标准，例如ST20、ERC-1400等。
+
+  Polymesh采用了一种名为Confidential Security Tokens（CST）的机制，可以实现真实资产通证的部分或完全保密。CST是一种基于零知识证明（Zero Knowledge Proof，ZKP）技术的真实资产通证。
+  
+  Polymesh采用了一种名为BABE的权益证明（Proof of Stake，PoS）共识机制，可以实现高效、安全和去中心化的区块生产。Polymesh还利用了一种名为GRANDPA的最终性协议，可以实现快速、确定和可适应的区块确认。
 + MANTRA
 + Realio Network
 
@@ -123,19 +141,29 @@ render_with_liquid: false
 
 贵金属、Fintech (金融科技)、Auto (汽车)、TradFi、气候、收藏品等。
 
-
 ### 对比点
-    1、KYC、AML和合规性
-    2、信用以及信用违约的挽救方案
-    3、透明度
-    4、流动性
+1. KYC、AML和合规性
+2. 信用以及信用违约的挽救方案
+3. 透明度
+4. 流动性
 
 
 ## 挑战
 
-### 身份
 ### 监管合规
+
+监管政策的不确定性和复杂性
+
+### 身份
+
+为了符合监管政策，需要对用户进行KYC等认证，才能向其提供相应服务。这又会带来隐私性问题。
+可以通过 DID 技术，在保护用户隐私的前提下 实现在公链上的可监管性。
+
+
 ### 风险管理
+
+RWA中重要的一环就是链下资产的托管，倘若链下资产丢失、损坏，或被盗取，那么链上的 RWA Token 将变成空气币，此外，借贷类型的协议，还涉及到清算链下主体的资产的操作，链上的合约程序是无法执行这一步的，必须依靠链下的法律程序。
+
 ### 技术风险
 常见的智能合约漏洞。
 
@@ -147,7 +175,8 @@ DeFi 借贷协议 Alchemix、NFT 借贷协议 JPEG'd、DeFi 合成资产协议 M
 
 CRV-ETH 被攻击，链上 CRV最低跌到0.08左右，但由于 AAVE 的价格取自 Chainlink，后者并没把异常价格体现，使得 Curve 创始人 Michael Egorov 在 AAVE 的仓位未被清算。
 
-## ERC-3643
+## RWA ERC
+### ERC-3643
 
 Permissioned tokens + digital identity
 
@@ -205,9 +234,40 @@ interface IERC3643 is IERC20 {
 }
 
 ```
+[Github 地址](https://github.com/ERC-3643/ERC-3643/tree/main)  
 https://eips.ethereum.org/EIPS/eip-3643
 https://github.com/ethereum/ercs/blob/master/ERCS/erc-3643.md
-https://github.com/ERC-3643/ERC-3643/tree/main
+
+### ERC-1404
+
+```js 
+pragma solidity ^0.4.24;
+import "zeppelin-solidity/contracts/token/ERC20/ERC20.sol";
+
+contract ERC1404 is ERC20 {
+    /// @notice Detects if a transfer will be reverted and if so returns an appropriate reference code
+    /// @param from Sending address
+    /// @param to Receiving address
+    /// @param value Amount of tokens being transferred
+    /// @return Code by which to reference message for rejection reasoning
+    /// @dev Overwrite with your custom transfer restriction logic
+    function detectTransferRestriction (address from, address to, uint256 value) public view returns (uint8);
+
+    /// @notice Returns a human-readable message for a given restriction code
+    /// @param restrictionCode Identifier for looking up a message
+    /// @return Text showing the restriction's reasoning
+    /// @dev Overwrite with your custom message and restrictionCode handling
+    function messageForTransferRestriction (uint8 restrictionCode) public view returns (string);
+}
+```
+
+[Github 地址](https://github.com/simple-restricted-token/simple-restricted-token/blob/master/contracts/token/ERC1404/ERC1404.sol)
+
++ detectTransferRestriction
+
+    由发行方实现，发行者在该函数中实现token的各种限制，包括：白名单、锁定期
+
++ messageForTransferRestriction
 
 ## 参考来源
 + [rwa.xyz](https://www.rwa.xyz/)

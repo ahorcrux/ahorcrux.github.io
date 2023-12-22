@@ -7,20 +7,18 @@ tags: [blockchain, web3, crypto, rwa]
 render_with_liquid: false
 ---
 
-## 介绍
-https://app.centrifuge.io/
+## 项目概括
 
-Centrifuge成立于2017年，由Lucas Vogelsang、Maex Ament和Martin Quensel联合创立。显示目前团队拥有56人
+### 简介
 
-信贷龙头
+[Centrifuge](https://app.centrifuge.io/) 是一种基础设施，可促进现实世界资产在链上的去中心化融资，创建一个完全透明的市场，允许借款人和贷方在没有不必要的中介的情况下进行交易。资产池是完全抵押的，流动性提供者拥有法律追索权，并且该协议与资产类别无关，资产池涵盖抵押贷款、发票、小额贷款和消费金融。
+
+Centrifuge 旨在解决中小企业在缺乏开放和透明的市场中无法获得有竞争力的借款利率的问题，将融资过程编码到区块链中，可以大大减少对这些中介机构的依赖，从而实现更加开放、透明和高效的融资渠道。
+
+### 团队
 
 
-
-
-
-https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7/assets
-
-其中 BlockTower Series 4 资金池 由资产发起方创建，每个资金池对应一个独立的法律主体SPV, 下方列表为作为链上抵押品的 NFT，每个 NFT 对应一笔由资产发起方验证过的链下现实资产，在该案例中为结构化信贷
+Centrifuge成立于2017年，由Lucas Vogelsang、Maex Ament和Martin Quensel联合创立。Linkin显示目前团队拥有56人。
 
 
 ## 业务模式
@@ -38,6 +36,8 @@ https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7/asset
 
 + [Apps](https://app.centrifuge.io/)
 
+    今年5月，Centrifuge逐步弃用Tinlake ，改用 Apps。
+
 + [Bridge](https://bridge.centrifuge.io/)
 
 + Chain
@@ -50,16 +50,16 @@ https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7/asset
 
 ### 产品角色
 
-+ 发行人 (SPV)
-
-  Special Purpose Vehicle是一种特殊独立法律实体，职能一般是在离岸资产证券化过程中，购买、包装证券化资产和以此为基础发行资产化证券，主要用于投资。由于业务范围被严格地限定，所以属于一般不会破产的高信用等级实体。
++ 借款人 (Borrower)
+  决定以一些现实世界资产作为抵押物进行融资，这些资产可以是发票或是房产；
 
 + 资产发起方 (Asset Originator，如 BlockTower)
   
   创建一个特殊目的实体（SPV，作为发行方，issuer），作为每个资金池的独立法律主体，保持每一个资金池的独立；Centrifuge 的合约会在以太坊上创建对应的资金池，并与对应的 SPV 关联起来；
 
-+ 借款人 (Borrower)
-  决定以一些现实世界资产作为抵押物进行融资，这些资产可以是发票或是房产；
++ 发行人 (SPV)
+
+  Special Purpose Vehicle是一种特殊独立法律实体，职能一般是在离岸资产证券化过程中，购买、包装证券化资产和以此为基础发行资产化证券，主要用于投资。由于业务范围被严格地限定，所以属于一般不会破产的高信用等级实体。
 
 + 投资人 (Investor)
   投资人指的是向 Centrifuge 资金池提供流动性的参与方。投资人需要完成 KYC 后才能进行交易；
@@ -75,24 +75,31 @@ https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7/asset
 https://docs.centrifuge.io/learn/legal-offering/
 1. 借款人希望通过发票或房地产等资产为抵押在链上进行融资。
 
-2. 资产发起人（与借款人有业务关系并执行承销，也投资于风险更高的TIN代币）为资金池设立法人实体SPV。一个资金池可能包括同种类型但对应不同借款人的多笔抵押品贷款。
+2. 资产发起人（与借款人有业务关系并执行承销，也投资于风险更高的 TIN 代币）为资金池设立法人实体SPV。一个资金池可能包括同种类型但对应不同借款人的多笔抵押品贷款。
 
-3. 资产发起人发起并验证RWA，为抵押资产在链上铸造一个NFT。
+3. 资产发起人发起并验证RWA，为抵押资产在链上铸造一个 NFT。
 
-4. 借款人与SPV签订融资协议，将NFT抵押在Tinlake池中，Tinlake池铸造DROP和TIN两种代币。
+4. 借款人与SPV签订融资协议，并要求资产发起人将其 NFT 锁定在与 SPV 绑定的 Centrifuge 池中，Centrifuge 池铸造 DROP 和 TIN 两种代币。
 
-5. Centrifuge和SEC许可的合格投资者验证服务商Securitize合作，帮助投资者完成KYC和AML流程。
+5. Centrifuge 和 SEC 许可的合格投资者验证服务商 Securitize 合作，帮助投资者完成 KYC 和 AML 流程。
 
-6. 投资者与Tinlake池对应的SPV签订投资协议，协议中包含了投资结构、风险、条款等，之后用DAI购买DROP或TIN代币。
+6. 投资者与 Centrifuge 池对应的 SPV 签订投资协议，协议中包含了投资结构、风险、条款等，之后用 DAI 购买 DROP 或 TIN 代币。
 
-7. 当有投资者为对应的资金池提供DAI的流动性时，SPV将DAI兑换为美元，向借款人的银行账户转账。
+7. 当有投资者为对应的资金池提供 DAI 的流动性时，SPV 将 DAI 兑换为美元并向借款人的银行账户转账 或者 直接将 DAI 转给借款人。
 
-8. 投资者可以随时要求赎回他们的DROP或TIN代币，但须保证DROP代币优于TIN代币赎回，且TIN代币不能低于设定的最低比例。
+8. 投资者可以随时要求赎回他们的 DROP 或 TIN 代币，但须保证 DROP 代币优于 TIN 代币赎回，且 TIN 代币不能低于设定的最低比例。
 
-9. 借款人在NFT到期时支付融资金额和融资费用，NFT被返还给资产发起人。
+9. 借款人在 NFT 到期时支付融资金额和融资费用，NFT 被返还给资产发起人。
 
-例子：https://web3caff.com/zh/archives/76670
+https://web3caff.com/zh/archives/76670
 
+New Silver 系列：投资于房地产过桥贷款的； 
+BlockTower 系列：投资于结构性信贷的；
+Harbor Trade Credit系列：基于应收账款借贷的  
+
+https://app.centrifuge.io/pools/0x55d86d51Ac3bcAB7ab7d2124931FbA106c8b60c7/assets
+
+其中 BlockTower Series 4 资金池 由资产发起方创建，每个资金池对应一个独立的法律主体SPV, 下方列表为作为链上抵押品的 NFT，每个 NFT 对应一笔由资产发起方验证过的链下现实资产，在该案例中为结构化信贷
 
 ### 集成DeFi
 
@@ -118,16 +125,17 @@ https://docs.centrifuge.io/use/setup-wallet/
 ### Tinlake Protocol
 
 一组部署在以太坊上的智能合约，它将现实世界资产转换为ERC-20代币，然后提供去中心化借贷协议的访问权限。
-  
+[Github 地址](https://github.com/centrifuge/tinlake)
+
 ### Liquidity-pools 
+
+Centrifuge Chain 的流动性池，可以在任何与 EVM 兼容的区块链上无缝部署 Centrifuge RWA 池。
+![centrifuge-pool 合约架构](/img/crypto/p_centrifuge_a_10_lp_pool.png)
+[Github 地址](https://github.com/centrifuge/liquidity-pools)
 
 ### Bridge
 
-标准化的以太坊桥，可以被其他项目重复使用，从而增加了互操作性
-
-https://bridge.centrifuge.io/
-
-
+[CFG<>wCFG 桥](https://bridge.centrifuge.io/)是可信中继网桥,由一组受到信任的中继器，在以太坊和 Centrifuge 链之间中继消息。
 
 ### Centrifuge Chain
 
@@ -156,8 +164,8 @@ Centrifuge Chain在2022年1月成功赢得了Polkadot的第8次插槽拍卖
   https://centrifuge.subscan.io/
 
 + 测试网
-  Flint
-  Amber
+  Flint、Amber
+  后续迁移至 Layer2 网络 Arbitrum 和 Base。
 
 ### Centrifuge P2P
 
@@ -166,6 +174,16 @@ Centrifuge Chain在2022年1月成功赢得了Polkadot的第8次插槽拍卖
 Paper Records 等公司使用 Centrifuge P2P 网络将发票签名并发送给 Spotify。Spotify 通过该签名来验证文件的接收及正确性，并将文件更新、签名版本发送回 Paper Records。Centrifuge 链用于节点身份，允许Paper Records 查找 Spotify，Spotify 验证 Paper Recrods。然后，Paper Records 就可以将带有两个签名的文档 Hash 锚定到 Centrifuge 链上。使用这些元素，Paper Records 现在可以在 Centrifuge 链上创造一个表示未付发票的 NFT，并将此 NFT 用作抵押品，以获得以太坊等其他区块链上的融资
 
 ### POD
+
+Centrifuge NFT 包含定价、融资和估值所需的最重要信息，并且可以锁定到 Centrifuge 协议的池中，作为用于融资的抵押品的代表。然而，默认情况下，这些 NFT 附加的任何链上信息都将是公开的。在现实世界的用例中，投资者通常需要访问有关资产的广泛信息，但发行人通常不会公开这些信息。
+
+![centrifuge-pod](/img/crypto/p_centrifuge_a_11_pod_tokenization.png)
+
+Centrifuge 私有数据层 POD (Centrifuge P2P 节点) 解决了这个问题，允许发行人和投资者安全、私密地访问额外的资产数据。
+
+![centrifuge-pod](/img/crypto/p_centrifuge_a_13_pod_architecture.png)
+
+Centrifuge POD 提供了一个简单的 API 接口来与 p2p 网络和 Centrifuge Chain 进行交互。POD 在“服务总线”主体上运行，其中插件和外部系统可以订阅有关特定对象的消息（例如，采购应用程序可以订阅订单对象的更改）。POD 抽象公共区块链和 P2P 层上发生的事件，并将其转换为内部总线上的消息，供其他应用程序使用
 
 https://docs.centrifuge.io/getting-started/privacy-first-tokenization/
 
