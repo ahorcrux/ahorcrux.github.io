@@ -14,3 +14,5 @@ render_with_liquid: false
 + https://docs.babylonchain.io/docs/user-guides/btc-staking-testnet/setup-node
 
 + https://twitter.com/ouyoung11/status/1760338164944912818
+  
++ https://medium.com/@smeb_y/babylon-%E6%B5%8B%E8%AF%95%E7%BD%91%E8%8A%82%E7%82%B9%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B-05ab39ff25ad
