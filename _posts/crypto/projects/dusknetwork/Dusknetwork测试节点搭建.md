@@ -7,11 +7,14 @@ tags: [blockchain, web3, crypto]
 render_with_liquid: false
 ---
 
-浏览器
-https://explorer.dusk.network/
+## 介绍
 
-钱包
-https://wallet.dusk.network/
++ [浏览器](https://explorer.dusk.network/)
+
++ [钱包](https://wallet.dusk.network/)
+
+
+## 运行节点
 
 修改默认端口
 9000 -- look in /opt/dusk/conf/rusk.toml

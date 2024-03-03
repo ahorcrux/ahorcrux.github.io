@@ -9,29 +9,13 @@ render_with_liquid: false
 
 ## 介绍
 
-+ [官网地址](https://www.berachain.com/)
++ [官网地址](https://www.eclipse.builders/)
 + [文档地址](https://docs.berachain.com/)
-+ [测试网水龙头](https://artio.faucet.berachain.com/)
-+ [测试网网络配置](https://docs.berachain.com/developers/)
-+ [测试网浏览器](https://artio.beratrail.io/)
++ [Discord](https://discord.gg/eclipse-labs)
++ [Twitter](https://docs.eclipse.builders/building-on-eclipse/getting-started)
+
 
 ## 搭建节点
-
-+ Validator Node
-
-     区块验证者节点
-
-+ RPC / WS Node
-
-     RPC节点
-
-+ Archive Node
-
-     历史数据
-
-+ Snapshot Node
-
-     加快网络节点同步
 
 
 ### 环境准备

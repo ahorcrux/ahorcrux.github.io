@@ -9,11 +9,9 @@ render_with_liquid: false
 
 ## 介绍
 
-+ [官网地址](https://www.berachain.com/)
-+ [文档地址](https://docs.berachain.com/)
-+ [测试网水龙头](https://artio.faucet.berachain.com/)
-+ [测试网网络配置](https://docs.berachain.com/developers/)
-+ [测试网浏览器](https://artio.beratrail.io/)
++ [官网地址](https://www.monad.xyz/)
++ [文档地址](https://docs.monad.xyz/)
++ [Discord](http://discord.gg/monad)
 
 ## 搭建节点
 

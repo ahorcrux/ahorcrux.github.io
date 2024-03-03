@@ -16,7 +16,7 @@ render_with_liquid: false
 
 ## 运行节点
 
-### 环境
+### 环境准备
 
 ### L1节点(Holesky)
 
