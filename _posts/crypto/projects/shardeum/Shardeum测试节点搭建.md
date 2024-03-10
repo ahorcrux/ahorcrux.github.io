@@ -9,25 +9,30 @@ render_with_liquid: false
 
 ## 介绍
 
-+ [浏览器](https://explorer.dusk.network/)
-
-+ [钱包](https://wallet.dusk.network/)
-
++ [官网](https://shardeum.org/)
 
 ## 运行节点
 
 [官方教程](https://docs.shardeum.org/node/run/validator)
 
+### 环境准备
+
+### 安装
+
 ```shell
 sudo curl -O https://gitlab.com/shardeum/validator/dashboard/-/raw/main/installer.sh && sudo chmod +x installer.sh && sudo ./installer.sh
 ```
 
+### 配置
 
 Web Dash默认端口8080，防止冲突修改为8084
 P2P 默认端口[1] 9001 不变 ，默认端口[2] 10001 不变 
 
+### 运行
+
 ### Stake Validator
-https://43.198.114.225:8084/
+
+
 
 ## *参考链接*
 
