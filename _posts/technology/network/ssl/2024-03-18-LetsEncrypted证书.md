@@ -244,6 +244,7 @@ acme.sh --issue  .....  --debug  2
 + [使用acme.sh签发证书](https://itlanyan.com/use-acme-sh-get-free-cert/)
 + [使用acme.sh免费申请HTTPS证书](https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E)
 + [使用ACME申请泛域名证书](https://www.panyanbin.com/article/e212b974.html)
++ [namesilo 通过 acme.sh 申请泛域名证书](https://blog.weifengx.com/2021/08/16/namesilo-%E9%80%9A%E8%BF%87-acme-sh-%E7%94%B3%E8%AF%B7%E6%B3%9B%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6/)
 + [acme.sh DNS验证证书Demo](https://github.com/acmesh-official/acme.sh/wiki/dnsapi)
 + [知乎-Let's Encrypt 安装配置教程](https://zhuanlan.zhihu.com/p/196638669)
 + [知乎-Certbot-免费的HTTPS证书](https://zhuanlan.zhihu.com/p/80909555)
