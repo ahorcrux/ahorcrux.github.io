@@ -331,6 +331,7 @@ const transaction = await txSigner.transfer(to,address,amount)
 
 + [登链社区 - Ether.js v5 中文文档](https://learnblockchain.cn/ethers_v5/)
 + [登链社区 - Eether.js中文文档](https://learnblockchain.cn/docs/ethers.js/getting-started.html)
-+ https://docs.ethers.org/v5/single-page/#/v5/api/providers/provider/-%23-BaseProvider
-+ https://github.com/WTFAcademy/WTF-Ethers/blob/main/02_Provider/readme.md
-+ https://mirror.xyz/xyyme.eth/hT78s8EI3wYp-IixUC951fQNWTON-EhNcGd2jXEtcdM
++ [知乎 - 使用 React 和 ethers.js 构建DApp](https://zhuanlan.zhihu.com/p/564934900)
++ [ethers.org](https://docs.ethers.org/v5/single-page/#/v5/api/providers/provider/-%23-BaseProvider)
++ [WTF-Ethers](https://github.com/WTFAcademy/WTF-Ethers/blob/main/02_Provider/readme.md)
++ [Mirror - xyyme](https://mirror.xyz/xyyme.eth/hT78s8EI3wYp-IixUC951fQNWTON-EhNcGd2jXEtcdM)
