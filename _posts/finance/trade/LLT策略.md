@@ -7,6 +7,11 @@ tags: [金融, 交易, 偏离率]
 render_with_liquid: false
 ---
 
+
+## 使用技巧
+
+
+
 ## TV脚本
 ```js
 //@version=5
