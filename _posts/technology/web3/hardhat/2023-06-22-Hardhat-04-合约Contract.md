@@ -7,6 +7,41 @@ tags: [blockchain, web3, hardhat, 使用技巧]
 render_with_liquid: false
 ---
 
+# Provider
+
+# 合约工厂 Factory
+
+`Ether.js` 创造了 `ContractFactory` 类，方便开发人员部署合约。
+
+## 实例化
+
+```ts
+const factory = new ethers.ContractFactory(abi, bytecode, wallet);
+```
+
++ `abi` : 
+
+
+
++ `bytecode` :
++ `wallet` : 
+
+## Api
+
+### 部署合约
+
+通过 `.deploy()` 函数实现合约部署。
+
+```ts
+const contract = await factory.deploy(param1, param2);
+```
+
+`.deploy(param1, param2)` 中的参数 `param` ,`param2` 用于传递给合约的构造函数，如果没有则不填。
+
+
+
+# 合约 Contract
+
 ### 获取客户端provider实例
 
 + 自定义配置网络

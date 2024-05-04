@@ -1,5 +1,5 @@
 ---
-title: Hardhat 学习笔记 02 - 配置文件[ hardhat.config.js ] 
+title: Hardhat 学习笔记 | [02] 配置文件 Hardhat.config.js
 author: since2014
 date: 2023-10-30 16:41:00 +0800
 categories: [Technology, Blockchain]
