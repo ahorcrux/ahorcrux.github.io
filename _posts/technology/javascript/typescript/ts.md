@@ -57,3 +57,7 @@ Hardhat中使用TypeScript
    ```shell
    yarn add --dev @nomicfoundation/hardhat-toolbox @nomicfoundation/hardhat-ignition @nomicfoundation/hardhat-ignition-ethers @nomicfoundation/hardhat-network-helpers @nomicfoundation/hardhat-chai-matchers @nomicfoundation/hardhat-ethers @nomicfoundation/hardhat-verify chai@4 ethers hardhat-gas-reporter solidity-coverage @typechain/hardhat typechain @typechain/ethers-v6
    ```
+
+# 参考来源
++ [官方文档](https://www.tslang.cn/docs/release-notes/typescript-3.0.html)
++ [TypeScript 入门教程](https://ts.xcatliu.com/)
