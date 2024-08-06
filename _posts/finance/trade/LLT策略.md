@@ -8,11 +8,13 @@ render_with_liquid: false
 ---
 
 
-## 使用技巧
+# 使用技巧
 
 
 
-## TV脚本
+# TV脚本
+
+## 第一版
 ```js
 //@version=5
 strategy("LLT Strategy", overlay=true)
@@ -50,7 +52,48 @@ plot(LLT, color=color.blue, title="LLT")
 
 ```
 
-这个是tradingview买入信号通知的代码
+## 常用版
+
+```js
+//@version=5
+indicator("LLT Indicator", overlay=true)
+
+// 可调整的参数a
+a = input.float(0.05, title="Alpha")
+
+// 初始化LLT
+var float LLT = na
+
+// 计算LLT
+price = close
+LLT := na(LLT[1]) ? price : na(LLT[2]) ? price : (a - math.pow(a, 2) / 4) * price + (math.pow(a, 2) / 2) * nz(price[1]) - (a - (3 / 4) * math.pow(a, 2)) * nz(price[2]) + 2 * (1 - a) * nz(LLT[1]) - math.pow(1 - a, 2) * nz(LLT[2])
+
+// 计算LLT的变化率
+deltaLLT = LLT - LLT[1]
+
+// 生成交易信号
+longCondition = deltaLLT > 0 and deltaLLT[1] <= 0
+shortCondition = deltaLLT < 0 and deltaLLT[1] >= 0
+
+// 绘制LLT
+plot(LLT, color=color.blue, title="LLT Line")
+
+// 标记买入和卖出信号
+plotshape(series=longCondition, location=location.belowbar, color=color.green, style=shape.arrowup, title="Buy", text="Buy")
+plotshape(series=shortCondition, location=location.abovebar, color=color.red, style=shape.arrowdown, title="Sell", text="Sell")
+
+// 设置通知
+alertcondition(longCondition, title="Buy Alert", message="LLT Buy Signal at {{close}}")
+alertcondition(shortCondition, title="Sell Alert", message="LLT Sell Signal at {{close}}")
+
+// 显示交易信号通知
+if (longCondition) 
+	alert("LLT Buy Signal at " + str.tostring(close), alert.freq_once_per_bar)
+if (shortCondition)
+	alert("LLT Sell Signal at " + str.tostring(close), alert.freq_once_per_bar)
+```
+
+## 这个是tradingview买入信号通知的代码
 ```js
 //@version=5
 indicator("Dragonfly Signal", overlay=true)
