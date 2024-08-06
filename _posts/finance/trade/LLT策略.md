@@ -49,5 +49,47 @@ if (shortCondition)
 plot(LLT, color=color.blue, title="LLT")
 
 ```
+
+这个是tradingview买入信号通知的代码
+```js
+//@version=5
+indicator("Dragonfly Signal", overlay=true)
+
+// 定义各个移动平均线
+ma5 = ta.sma(close, 5)
+ma10 = ta.sma(close, 10)
+ma30 = ta.sma(close, 30)
+ma90 = ta.sma(close, 90)
+ma120 = ta.sma(close, 120)
+ma256 = ta.sma(close, 256)
+
+// 定义检查MA5和MA10拐点的函数
+checkInflection(ma, len) =>
+found = false
+for i = 1 to len
+if (ma[i] < ma[i+1] and ma[i-1] > ma[i])
+found := true
+found
+
+// 检查过去5根K线的MA5和MA10拐点
+ma5Inflection = checkInflection(ma5, 5)
+ma10Inflection = checkInflection(ma10, 5)
+
+// 定义开仓条件
+longCondition1 = close < ma30 and close < ma90 and close < ma120 and close < ma256
+longCondition2 = close > ma10 and open < ma10
+longCondition3 = close > ma5
+longCondition4 = ma5 > ta.sma(close[1], 5) and ma10 > ta.sma(close[1], 10)
+longCondition5 = ma5Inflection
+longCondition6 = ma10Inflection
+
+// 检查是否满足所有开仓条件
+longEntry = longCondition1 and longCondition2 and longCondition3 and longCondition4 and longCondition5 and longCondition6
+
+// 标记买入信号
+if longEntry
+label.new(bar_index, low, "Buy", color=color.rgb(33,243,243), textcolor=color.white, style=label.style_label_up, size=size.small)
+alert("Buy Signal!", alert.freq_once_per_bar)
+```
 ## *参考链接*
 
