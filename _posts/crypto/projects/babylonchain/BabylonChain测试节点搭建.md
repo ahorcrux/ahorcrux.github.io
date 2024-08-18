@@ -18,7 +18,7 @@ render_with_liquid: false
 
 地址：bbn1xffge7t6qvtvevlqle9r2dcsfcglccl30gq9g0
 
-## *参考链接*
+# *参考链接*
 
 + https://docs.babylonchain.io/docs/user-guides/btc-staking-testnet/setup-node
 

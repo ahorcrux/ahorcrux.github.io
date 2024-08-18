@@ -160,6 +160,6 @@ Block Explorer URL (optional): https://betanet-scan.artela.network/
      ```
 https://43.198.114.225:8084/
 
-## *参考链接*
+# *参考链接*
 
 + https://medium.com/@smeb_y/artela-%E8%8A%82%E7%82%B9%E9%83%A8%E7%BD%B2-%E9%AA%8C%E8%AF%81%E8%80%85%E8%8A%82%E7%82%B9%E5%88%9B%E5%BB%BA%E5%9B%BE%E6%96%87%E5%85%A8%E6%95%99%E7%A8%8B-2aebf9af2913

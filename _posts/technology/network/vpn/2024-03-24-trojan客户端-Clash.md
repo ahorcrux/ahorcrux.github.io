@@ -89,7 +89,7 @@ render_with_liquid: false
   直连，即所有连接不走代理
 
 选择 rule 之后，有些网址不能访问，tradingview.com ？
-## *参考来源*
+# *参考来源*
 
 + [Trojan-Wins客户端-clash配置](https://v2xtls.org/clash-for-windows%e9%85%8d%e7%bd%aetrojan%e6%95%99%e7%a8%8b/)
 + [深入理解clash配置](https://v2xtls.org/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3clash%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6/)

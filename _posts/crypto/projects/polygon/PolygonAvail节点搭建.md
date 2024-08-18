@@ -7,6 +7,6 @@ tags: [blockchain, web3, crypto]
 render_with_liquid: false
 ---
 
-## *参考链接*
+# *参考链接*
 
 + https://medium.com/@insightstake/avail-clash-of-nodes-tutorial-1f25f5c08984

@@ -7,7 +7,7 @@ tags: [blockchain, web3, crypto]
 render_with_liquid: false
 ---
 
-## *参考链接*
+# *参考链接*
 
 * https://www.apollographql.com/blog/graphql/basics/graphql-explained/
 

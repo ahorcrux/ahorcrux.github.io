@@ -21,7 +21,7 @@ render_with_liquid: false
 8080 -- there is command line parameter --http-listen-addr
 service file is /etc/systemd/system/rusk.service
 
-## *参考链接*
+# *参考链接*
 
 * https://docs.dusk.network/itn/node-running-guide/
 

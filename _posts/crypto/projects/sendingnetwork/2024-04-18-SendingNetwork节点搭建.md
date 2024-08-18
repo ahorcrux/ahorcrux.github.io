@@ -40,6 +40,6 @@ sudo ./edgenode_install.sh 0xb99fDd17f05B6283e0525792C7754A1e78A8f26E
 ps wxau | grep edgenode | grep -v monitor | grep -v grep
 ```
 
-## *参考链接*
+# *参考链接*
 
 

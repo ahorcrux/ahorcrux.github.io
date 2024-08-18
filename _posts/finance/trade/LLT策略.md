@@ -139,5 +139,5 @@ if longEntry
     label.new(bar_index, low, "Buy", color=color.rgb(33,243,243), textcolor=color.white, style=label.style_label_up, size=size.small)
     
 ```
-## *参考链接*
+# *参考链接*
 

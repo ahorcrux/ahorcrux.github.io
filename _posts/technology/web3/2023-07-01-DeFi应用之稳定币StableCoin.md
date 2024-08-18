@@ -35,6 +35,6 @@ render_with_liquid: false
   
   * Fray
 
-## *参考来源*
+# *参考来源*
 
 > [一文读懂：深度解析全球稳定币2023现状与监管 - PANews](https://www.panewslab.com/zh/articledetails/wsx20903ls7b.html)

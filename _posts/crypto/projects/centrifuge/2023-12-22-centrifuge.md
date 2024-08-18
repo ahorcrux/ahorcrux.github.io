@@ -189,7 +189,7 @@ https://docs.centrifuge.io/getting-started/privacy-first-tokenization/
 
 https://docs.centrifuge.io/build/nfts/
 
-## *参考链接*
+# *参考链接*
 + https://docs.centrifuge.io/
 + https://www.gate.io/zh/learn/articles/what-is-centrifuge/752
 + https://foresightnews.pro/article/detail/48310

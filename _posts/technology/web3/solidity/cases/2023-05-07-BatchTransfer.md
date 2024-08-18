@@ -191,6 +191,6 @@ main().catch((error) => {
 
 ### 空投
 
-## *参考链接*
+# *参考链接*
 
 + [ethereum batch trasfer](https://github.com/xingzjx/blockchain/blob/master/ethereum/ethereum%20batch%20trasfer.md)
