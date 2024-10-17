@@ -64,18 +64,15 @@ Flexible：用户和 Cloudflare 之间的连接使用 HTTPS，但 Cloudflare 和
 
 Cloudflare 可能需要几分钟到几个小时来为你的域名生成并配置 SSL 证书。你可以在 Cloudflare 仪表板的 “SSL/TLS” 页面中检查证书状态。当证书生成完成后，你的域名将可以通过 HTTPS 访问。
 
+## 结合 Trojan 注意事项
+
+其中 local_addr 和 local_port 是向外提供服务 (即翻墙) 的地址. 由于我们将使用 Cloudflare 的 CDN 服务, 所以如果你想修改 local_port 你只能从 443, 2053, 2083, 2087, 2096, 8443 这些端口中选择. 这是由于 Cloudflare 对端口的限制
+
+https://helium7.me/posts/trojan-go-ws-cdn/
+
 # *参考来源*
 
-+ [acmesh-official](https://github.com/acmesh-official/acme.sh#3-install-the-issued-cert-to-apachenginx-etc)
-+ [使用acme.sh签发证书](https://itlanyan.com/use-acme-sh-get-free-cert/)
-+ [使用acme.sh免费申请HTTPS证书](https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E)
-+ [使用ACME申请泛域名证书](https://www.panyanbin.com/article/e212b974.html)
-+ [namesilo 通过 acme.sh 申请泛域名证书](https://blog.weifengx.com/2021/08/16/namesilo-%E9%80%9A%E8%BF%87-acme-sh-%E7%94%B3%E8%AF%B7%E6%B3%9B%E5%9F%9F%E5%90%8D%E8%AF%81%E4%B9%A6/)
-+ [acme.sh DNS验证证书Demo](https://github.com/acmesh-official/acme.sh/wiki/dnsapi)
-+ [知乎-Let's Encrypt 安装配置教程](https://zhuanlan.zhihu.com/p/196638669)
-+ [知乎-Certbot-免费的HTTPS证书](https://zhuanlan.zhihu.com/p/80909555)
-+ [Let's Encrypt 使用教程](https://diamondfsd.com/lets-encrytp-hand-https/)
-+ [nginx-acme配置](https://wsgzao.github.io/post/acme/)
+
 
 
 
