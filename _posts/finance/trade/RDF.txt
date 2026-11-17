@@ -1,0 +1,41 @@
+//@version=5
+indicator("Revised Dragonfly Indicator", overlay=true)
+
+// === 1. 定义所需的移动平均线 ===
+ma5   = ta.sma(close, 5)
+ma10  = ta.sma(close, 10)
+ma30  = ta.sma(close, 30)
+ma90  = ta.sma(close, 90)
+ma120 = ta.sma(close, 120)
+ma256 = ta.sma(close, 256)
+
+// 取这几条均线的最大值（用于平仓逻辑）
+maMax = math.max(math.max(ma30, ma90), math.max(ma120, ma256))
+
+// === 2. 构造开多信号的四个条件 ===
+cond1 = (close > ma10) and (close > ma5)
+cond2 = (close[1] < ma10[1])
+cond3 = ((close - open) / open) > 0.005  // 0.5%
+cond4 = (high < ma30) and (high < ma90) and (high < ma120) and (high < ma256)
+
+// 同时满足才出现“开多信号”
+longCondition = cond1 and cond2 and cond3 and cond4
+
+// === 3. 固定止损价（仅做参考，不执行实单） ===
+var float stopLossPrice = na
+if longCondition
+    stopLossPrice := ta.lowest(low, 5)
+
+// === 4. 止损逻辑(指标模式下仅提示，不实盘)
+
+// === 5. 平仓逻辑：当收盘价首次突破4条长期均线时出现“平仓信号”
+takeProfitCondition = (close > maMax) and (close[1] < maMax[1])
+
+// === 6. 声明警报条件 (单行写法) ===
+alertcondition(condition=longCondition, title="Buy Signal Triggered", message="开仓信号出现 (longCondition)")
+alertcondition(condition=takeProfitCondition, title="Take Profit Triggered", message="平仓信号出现 (takeProfitCondition)")
+
+// === 7. 绘制 Buy / Sell 形状标记（单行写法） ===
+plotshape(longCondition, title="Buy Signal", style=shape.triangleup, color=color.new(color.green, 0), location=location.belowbar, size=size.small)
+plotshape(takeProfitCondition, title="Sell Signal", style=shape.triangledown, color=color.new(color.red, 0), location=location.abovebar, size=size.small)
+
